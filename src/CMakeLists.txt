@@ -18,7 +18,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 
-add_definitions(-DRENAME_ME_LIBRARY)
+add_definitions(-DCredits_LIBRARY)
 
 
 find_package(QT NAMES Qt6 Qt5 COMPONENTS Core REQUIRED)
