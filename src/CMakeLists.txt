@@ -18,4 +18,6 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_subdirectory(Library)
-add_subdirectory(Example)
+if (${QT_VERSION_MAJOR} AND NOT ${WITHOUT_EXAMPLES})
+    add_subdirectory(Example)
+endif()

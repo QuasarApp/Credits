@@ -45,7 +45,7 @@ set(LANGS ${CMAKE_CURRENT_SOURCE_DIR}/languages/en.ts
           ${CMAKE_CURRENT_SOURCE_DIR}/languages/ua.ts)
 
 
-prepareQM(${CMAKE_CURRENT_SOURCE_DIR} "${LANGS}")
+prepareQM( ${PROJECT_NAME} ${CMAKE_CURRENT_SOURCE_DIR} "${LANGS}")
 
 setVersion(0 0 1)
 
