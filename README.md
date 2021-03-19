@@ -1,6 +1,6 @@
 # This is a credits widget for all QuasarApp application
 
-## ![Credits](res/Credits.jpg) 
+## ![Credits](Credits/src/Library/src/res/Credits.jpg) 
 
 Join the development fund and support QuasarApp to help with the development of our projects.
 

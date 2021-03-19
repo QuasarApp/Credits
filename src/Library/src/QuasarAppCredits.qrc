@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>QuasarAppCreditsModule/qmldir</file>
+        <file>QuasarAppCreditsModule/Credits.qml</file>
+    </qresource>
+    <qresource prefix="/res">
+        <file>res/qr.png</file>
+        <file>res/Credits.jpg</file>
+    </qresource>
+</RCC>

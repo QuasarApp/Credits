@@ -20,6 +20,7 @@ find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Core Test QUIET)
 
 include(CMake/ccache.cmake)
 include(CMake/QuasarAppCITargets.cmake)
+include(CMake/tr.cmake)
 
 # Add sub directories
 add_subdirectory(src)
