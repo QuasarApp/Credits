@@ -13,8 +13,14 @@ if(TARGET ${PROJECT_NAME})
 endif()
 
 set (QT_VERSION_MAJOR OFF)
-set (WITHOUT_TESTS OFF)
-set (WITHOUT_EXAMPLES OFF)
+
+if(NOT DEFINED CREDITS_TESTS)
+    set (CREDITS_TESTS ON)
+endif()
+
+if(NOT DEFINED CREDITS_EXAMPLES)
+    set (CREDITS_EXAMPLES ON)
+endif()
 
 find_package(QT NAMES Qt6 Qt5 COMPONENTS Core Test QUIET)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Core Test QUIET)
@@ -25,7 +31,7 @@ include(CMake/tr.cmake)
 
 # Add sub directories
 add_subdirectory(src)
-if (${QT_VERSION_MAJOR} AND NOT ${WITHOUT_TESTS})
+if (${QT_VERSION_MAJOR} AND ${CREDITS_TESTS})
     add_subdirectory(tests)
 endif()
 
