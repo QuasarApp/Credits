@@ -36,7 +36,7 @@
     <message>
         <location filename="../src/QuasarAppCreditsModule/Credits.qml" line="106"/>
         <source>* Rustem Husnutdinov</source>
-        <translation>* Rüstem Hüsnutdinov</translation>
+        <translation>* Rustem Husnutdinov</translation>
     </message>
 </context>
 </TS>
