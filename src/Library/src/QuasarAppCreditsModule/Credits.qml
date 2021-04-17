@@ -110,7 +110,7 @@ Page {
 
             }
             
-             Label {
+            Label {
                 text: qsTr("* Semih Ufuk Güler")
                 Layout.fillWidth: true
 
