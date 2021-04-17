@@ -12,26 +12,59 @@ if(TARGET ${PROJECT_NAME})
   return()
 endif()
 
-set (QT_VERSION_MAJOR OFF)
+if ( NOT DEFINED CREDITS_EXAMPLES )
+    set(CREDITS_EXAMPLES ON)
 
-if(NOT DEFINED CREDITS_TESTS)
-    set (CREDITS_TESTS ON)
+    if (DEFINED TARGET_PLATFORM_TOOLCHAIN)
+        if (${TARGET_PLATFORM_TOOLCHAIN} STREQUAL "wasm32")
+            set(CREDITS_EXAMPLES OFF)
+        endif()
+    endif()
+
+    if (ANDROID)
+        set(CREDITS_EXAMPLES OFF)
+    endif()
 endif()
 
-if(NOT DEFINED CREDITS_EXAMPLES)
-    set (CREDITS_EXAMPLES ON)
+if ( NOT DEFINED CREDITS_TESTS )
+    set(CREDITS_TESTS ON)
+
+    if (DEFINED TARGET_PLATFORM_TOOLCHAIN)
+        if (${TARGET_PLATFORM_TOOLCHAIN} STREQUAL "wasm32")
+            set(CREDITS_TESTS OFF)
+        endif()
+    endif()
+
+    if (ANDROID)
+        set(CREDITS_TESTS OFF)
+    endif()
 endif()
 
-find_package(QT NAMES Qt6 Qt5 COMPONENTS Core Test QUIET)
-find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Core Test QUIET)
+find_package(QT NAMES Qt6 Qt5 COMPONENTS Core Quick QuickControls2 REQUIRED)
+find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Core Quick QuickControls2 REQUIRED)
 
-include(CMake/ccache.cmake)
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+
 include(CMake/QuasarAppCITargets.cmake)
+include(CMake/ccache.cmake)
 include(CMake/QtUtils.cmake)
+include(CMake/ProjectOut.cmake)
+include(CMake/crossplatform/crossplatform.cmake)
+include(CMake/Version.cmake)
 
 # Add sub directories
-add_subdirectory(src)
-if (${QT_VERSION_MAJOR} AND ${CREDITS_TESTS})
+
+add_subdirectory(src/Library)
+if (${CREDITS_EXAMPLES})
+    add_subdirectory(src/Example)
+endif()
+
+if (${CREDITS_TESTS})
     add_subdirectory(tests)
 endif()
 

@@ -9,7 +9,6 @@ cmake_minimum_required(VERSION 3.14)
 
 set(CURRENT_PROJECT ${PROJECT_NAME}Test)
 
-include(../CMake/ProjectOut.cmake)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_AUTOMOC ON)
@@ -19,6 +18,8 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+find_package(QT NAMES Qt6 Qt5 COMPONENTS Test REQUIRED)
+find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Test REQUIRED)
 
 file(GLOB SOURCE_CPP
     "*.cpp" "*.qrc"
@@ -29,11 +30,10 @@ set(PUBLIC_INCUDE_DIR ${PUBLIC_INCUDE_DIR} "${CMAKE_CURRENT_SOURCE_DIR}/units")
 
 
 add_executable(${CURRENT_PROJECT} ${SOURCE_CPP})
-target_link_libraries(${CURRENT_PROJECT} PRIVATE Qt::Test)
+target_link_libraries(${CURRENT_PROJECT} PRIVATE ${PROJECT_NAME} Qt${QT_MAJOR_VERSION}::Test)
 
 target_include_directories(${CURRENT_PROJECT} PUBLIC ${PUBLIC_INCUDE_DIR})
 
 
-include(../CMake/QuasarAppCITargets.cmake)
 initTests()
 addTests(${PROJECT_NAME} ${CURRENT_PROJECT})
