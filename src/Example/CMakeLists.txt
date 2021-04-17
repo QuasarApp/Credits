@@ -10,9 +10,6 @@ cmake_minimum_required(VERSION 3.14)
 set(CURRENT_PROJECT "${PROJECT_NAME}Eaxample")
 
 
-find_package(QT NAMES Qt6 Qt5 COMPONENTS Core REQUIRED)
-find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Core REQUIRED)
-
 file(GLOB SOURCE_CPP
     "*.cpp" "*.qrc"
     "src/*.cpp" "src/*.qrc"
@@ -25,9 +22,6 @@ set(PRIVATE_INCUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/src/Private")
 
 add_executable(${CURRENT_PROJECT} ${SOURCE_CPP})
 
-if (${QT_VERSION_MAJOR})
-    target_link_libraries(${CURRENT_PROJECT} PUBLIC Qt::Core)
-endif()
 target_link_libraries(${CURRENT_PROJECT} PUBLIC ${PROJECT_NAME})
 
 target_include_directories(${CURRENT_PROJECT} PUBLIC ${PUBLIC_INCUDE_DIR})
