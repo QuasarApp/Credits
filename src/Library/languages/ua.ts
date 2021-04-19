@@ -38,5 +38,10 @@
         <source>* Rustem Husnutdinov</source>
         <translation>* Rustem Husnutdinov</translation>
     </message>
+    <message>
+        <location filename="../src/QuasarAppCreditsModule/Credits.qml" line="114"/>
+        <source>* Semih Ufuk Güler</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 </TS>
