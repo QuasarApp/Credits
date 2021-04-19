@@ -109,6 +109,14 @@ Page {
                 textFormat: TextEdit.MarkdownText
 
             }
+            
+            Label {
+                text: qsTr("* Semih Ufuk Güler")
+                Layout.fillWidth: true
+
+                textFormat: TextEdit.MarkdownText
+
+            }
         }
 
         anchors.fill: parent
