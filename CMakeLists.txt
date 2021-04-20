@@ -49,12 +49,7 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-
-include(CMake/QuasarAppCITargets.cmake)
-include(CMake/ccache.cmake)
-include(CMake/QtUtils.cmake)
-include(CMake/ProjectOut.cmake)
-include(CMake/crossplatform/crossplatform.cmake)
+include(CMake/QuasarApp.cmake)
 include(CMake/Version.cmake)
 
 # Add sub directories
