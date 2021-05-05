@@ -1,15 +1,11 @@
 <RCC>
-    <qresource prefix="/">
-        <file>QuasarAppCreditsModule/qmldir</file>
-        <file>QuasarAppCreditsModule/Credits.qml</file>
-        <file>languages/ua.qm</file>
-        <file>languages/tr.qm</file>
-        <file>languages/ru.qm</file>
-        <file>languages/ja.qm</file>
-        <file>languages/en.qm</file>
-    </qresource>
     <qresource prefix="/res">
         <file>res/qr.png</file>
         <file>res/Credits.jpg</file>
+        <file>credits_languages/ua.qm</file>
+        <file>credits_languages/tr.qm</file>
+        <file>credits_languages/ru.qm</file>
+        <file>credits_languages/ja.qm</file>
+        <file>credits_languages/en.qm</file>
     </qresource>
 </RCC>
