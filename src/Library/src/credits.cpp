@@ -17,6 +17,7 @@ bool init(QQmlApplicationEngine * engine) {
 
     engine->addImportPath(":/");
 
+
     return true;
 }
 }
