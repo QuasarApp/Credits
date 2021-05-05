@@ -8,4 +8,8 @@
         <file>credits_languages/ja.qm</file>
         <file>credits_languages/en.qm</file>
     </qresource>
+    <qresource prefix="/">
+        <file>QuasarAppCreditsModule/qmldir</file>
+        <file>QuasarAppCreditsModule/Credits.qml</file>
+    </qresource>
 </RCC>
