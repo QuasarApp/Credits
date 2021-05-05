@@ -31,11 +31,11 @@ target_link_libraries(${PROJECT_NAME} PUBLIC Qt${QT_MAJOR_VERSION}::Core Qt${QT_
 target_include_directories(${PROJECT_NAME} PUBLIC ${PUBLIC_INCUDE_DIR})
 target_include_directories(${PROJECT_NAME} PRIVATE ${PRIVATE_INCUDE_DIR})
 
-set(LANGS ${CMAKE_CURRENT_SOURCE_DIR}/src/languages/en.ts
-          ${CMAKE_CURRENT_SOURCE_DIR}/src/languages/ru.ts
-          ${CMAKE_CURRENT_SOURCE_DIR}/src/languages/ja.ts
-          ${CMAKE_CURRENT_SOURCE_DIR}/src/languages/tr.ts
-          ${CMAKE_CURRENT_SOURCE_DIR}/src/languages/ua.ts)
+set(LANGS ${CMAKE_CURRENT_SOURCE_DIR}/src/credits_languages/en.ts
+          ${CMAKE_CURRENT_SOURCE_DIR}/src/credits_languages/ru.ts
+          ${CMAKE_CURRENT_SOURCE_DIR}/src/credits_languages/ja.ts
+          ${CMAKE_CURRENT_SOURCE_DIR}/src/credits_languages/tr.ts
+          ${CMAKE_CURRENT_SOURCE_DIR}/src/credits_languages/ua.ts)
 
 
 prepareQM( ${PROJECT_NAME} ${CMAKE_CURRENT_SOURCE_DIR} "${LANGS}")
