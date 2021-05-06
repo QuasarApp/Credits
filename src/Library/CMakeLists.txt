@@ -35,7 +35,7 @@ set(LANGS ${CMAKE_CURRENT_SOURCE_DIR}/src/credits_languages/en.ts
           ${CMAKE_CURRENT_SOURCE_DIR}/src/credits_languages/ru.ts
           ${CMAKE_CURRENT_SOURCE_DIR}/src/credits_languages/ja.ts
           ${CMAKE_CURRENT_SOURCE_DIR}/src/credits_languages/tr.ts
-          ${CMAKE_CURRENT_SOURCE_DIR}/src/credits_languages/ua.ts)
+          ${CMAKE_CURRENT_SOURCE_DIR}/src/credits_languages/uk.ts)
 
 
 prepareQM( ${PROJECT_NAME} ${CMAKE_CURRENT_SOURCE_DIR} "${LANGS}")

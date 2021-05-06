@@ -6,10 +6,10 @@
     <qresource prefix="/">
         <file>QuasarAppCreditsModule/qmldir</file>
         <file>QuasarAppCreditsModule/Credits.qml</file>
-        <file>credits_languages/ua.qm</file>
         <file>credits_languages/tr.qm</file>
         <file>credits_languages/ru.qm</file>
         <file>credits_languages/ja.qm</file>
         <file>credits_languages/en.qm</file>
+        <file>credits_languages/uk.qm</file>
     </qresource>
 </RCC>
