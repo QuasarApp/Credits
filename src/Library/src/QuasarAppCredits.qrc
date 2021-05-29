@@ -11,5 +11,10 @@
         <file>credits_languages/ja.qm</file>
         <file>credits_languages/en.qm</file>
         <file>credits_languages/uk.qm</file>
+        <file>credits_languages/pl.qm</file>
+        <file>credits_languages/fr.qm</file>
+        <file>credits_languages/de.qm</file>
+        <file>credits_languages/zh.qm</file>
+        <file>credits_languages/es.qm</file>
     </qresource>
 </RCC>
