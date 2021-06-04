@@ -16,5 +16,6 @@
         <file>credits_languages/de.qm</file>
         <file>credits_languages/zh.qm</file>
         <file>credits_languages/es.qm</file>
+        <file>QuasarAppCreditsModule/ListViewer.qml</file>
     </qresource>
 </RCC>

@@ -10,6 +10,21 @@ Page {
     property bool showHeader: true
     property bool showPatreon: true
     property bool showBitcoin: true
+    property bool showPatrons: (showQR || showPatreon || showBitcoin) && patronsList.length
+
+    // developersa and patronsList lists must be contain structure with a section amd sectionList fields.
+    // The section it is section name
+    // the sectionList it is list of section members.
+    property var developersList: []
+    property var patronsList: [
+        {
+            section: qsTr("## Silver Membership Patrons:"),
+            sectionList: [
+                "* Rustem Husnutdinov",
+                "* Semih Ufuk Güler"
+            ]
+        }
+    ]
 
     header: Image {
         fillMode: Image.PreserveAspectFit
@@ -90,33 +105,33 @@ Page {
                 Layout.fillWidth: true
 
                 textFormat: TextEdit.MarkdownText
+                visible: showPatrons
 
 
             }
 
+            ListViewer {
+                model: patronsList
+
+                visible: showPatrons
+            }
+
             Label {
-                text: qsTr("## Silver Membership Patrons:")
+                text: qsTr("# Developers list:")
                 Layout.fillWidth: true
 
                 textFormat: TextEdit.MarkdownText
 
-            }
-
-            Label {
-                text: qsTr("* Rustem Husnutdinov")
-                Layout.fillWidth: true
-
-                textFormat: TextEdit.MarkdownText
+                visible: developersList.length
 
             }
-            
-            Label {
-                text: qsTr("* Semih Ufuk Güler")
-                Layout.fillWidth: true
 
-                textFormat: TextEdit.MarkdownText
+            ListViewer {
+                model: developersList
 
+                visible: developersList.length
             }
+
         }
 
         anchors.fill: parent
@@ -175,6 +190,20 @@ Page {
                 showHeader: true
                 showPatreon: false
                 showBitcoin: false
+                showPatrons: true
+
+            }
+        },
+
+        State {
+            name: "about"
+            PropertyChanges {
+                target: root
+                showQR: false
+                showHeader: true
+                showPatreon: false
+                showBitcoin: false
+                patronsList: []
 
             }
         }

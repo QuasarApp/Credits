@@ -29,10 +29,10 @@
     </message>
     <message>
         <source>* Rustem Husnutdinov</source>
-        <translation>* Rustem Husnutdinov</translation>
+        <translation type="vanished">* Rustem Husnutdinov</translation>
     </message>
     <message>
-        <source>* Semih Ufuk Güler</source>
+        <source># Developers list:</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
