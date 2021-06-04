@@ -37,7 +37,7 @@
     </message>
     <message>
         <source># Developers list:</source>
-        <translation type="unfinished"></translation>
+        <translation># 开发者列表：</translation>
     </message>
 </context>
 </TS>

@@ -33,7 +33,7 @@
     </message>
     <message>
         <source># Developers list:</source>
-        <translation type="unfinished"></translation>
+        <translation># Geliştirici listesi:</translation>
     </message>
 </context>
 </TS>
