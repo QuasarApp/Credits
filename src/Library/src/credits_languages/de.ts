@@ -37,7 +37,7 @@
     </message>
     <message>
         <source># Developers list:</source>
-        <translation># Entwicklerliste:</translation>
+        <translation># Entwickler Liste:</translation>
     </message>
 </context>
 </TS>
