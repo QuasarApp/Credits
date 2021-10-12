@@ -35,5 +35,9 @@
         <source># Developers list:</source>
         <translation># 開発者リスト:</translation>
     </message>
+    <message>
+        <source># Version list:</source>
+        <translation># バージョンリスト:</translation>
+    </message>
 </context>
 </TS>
