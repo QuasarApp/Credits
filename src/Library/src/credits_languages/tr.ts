@@ -35,5 +35,9 @@
         <source># Developers list:</source>
         <translation># Geliştirici listesi:</translation>
     </message>
+    <message>
+        <source># Version list:</source>
+        <translation># Sürüm listesi:</translation>
+    </message>
 </context>
 </TS>

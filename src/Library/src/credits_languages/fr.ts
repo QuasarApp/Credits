@@ -39,5 +39,9 @@
         <source># Developers list:</source>
         <translation># Liste des développeurs :</translation>
     </message>
+    <message>
+        <source># Version list:</source>
+        <translation># Liste des versions:</translation>
+    </message>
 </context>
 </TS>
