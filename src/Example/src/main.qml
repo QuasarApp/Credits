@@ -24,6 +24,9 @@ ApplicationWindow {
         }
         Credits {
             state: "minimal"
+            iconLogo: "qrc:/res/res/Credits.jpg"
+            iconWidth: 250
+
         }
         Credits {
             state: "bitcoinSimple"
