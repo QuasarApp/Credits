@@ -49,7 +49,8 @@ Page {
 
             Image {
                 id: logoName
-                fillMode: Image.PreserveAspectCrop
+                mipmap: true
+                fillMode: Image.PreserveAspectFit
                 source: iconLogo
                 Layout.alignment: Qt.AlignHCenter
                 Layout.preferredWidth: iconWidth

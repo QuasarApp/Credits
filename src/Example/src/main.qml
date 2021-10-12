@@ -25,7 +25,7 @@ ApplicationWindow {
         Credits {
             state: "minimal"
             iconLogo: "qrc:/res/res/Credits.jpg"
-            iconWidth: 100
+            iconWidth: 250
 
         }
         Credits {
