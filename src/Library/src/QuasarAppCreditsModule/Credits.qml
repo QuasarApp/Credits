@@ -48,11 +48,12 @@ Page {
             spacing: 10
 
             Image {
-                id: name
+                id: logoName
                 fillMode: Image.PreserveAspectCrop
                 source: iconLogo
                 Layout.alignment: Qt.AlignHCenter
                 Layout.preferredWidth: iconWidth
+                Layout.preferredHeight: iconWidth
                 visible: iconLogo.length
             }
 
