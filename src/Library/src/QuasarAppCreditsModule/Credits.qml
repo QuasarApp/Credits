@@ -15,7 +15,9 @@ Page {
     // developersa and patronsList lists must be contain structure with a section amd sectionList fields.
     // The section it is section name
     // the sectionList it is list of section members.
+    property string iconLogo: "qrc:/res/res/Credits.jpg"
     property var developersList: []
+    property var versionList: []
     property var patronsList: [
         {
             section: qsTr("## Silver Membership Patrons:"),
@@ -28,7 +30,7 @@ Page {
 
     header: Image {
         fillMode: Image.PreserveAspectFit
-        source: "qrc:/res/res/Credits.jpg"
+        source: iconLogo
         visible: showHeader
     }
 
@@ -130,6 +132,22 @@ Page {
                 model: developersList
 
                 visible: developersList.length
+            }
+
+            Label {
+                text: qsTr("# Version list:")
+                Layout.fillWidth: true
+
+                textFormat: TextEdit.MarkdownText
+
+                visible: versionList.length
+
+            }
+
+            ListViewer {
+                model: versionList
+
+                visible: versionList.length
             }
 
         }
