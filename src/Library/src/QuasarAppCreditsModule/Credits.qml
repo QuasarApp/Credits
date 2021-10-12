@@ -15,7 +15,8 @@ Page {
     // developersa and patronsList lists must be contain structure with a section amd sectionList fields.
     // The section it is section name
     // the sectionList it is list of section members.
-    property string iconLogo: "qrc:/res/res/Credits.jpg"
+    property string iconLogo: ""
+    property int iconWidth: 250
     property var developersList: []
     property var versionList: []
     property var patronsList: [
@@ -30,7 +31,7 @@ Page {
 
     header: Image {
         fillMode: Image.PreserveAspectFit
-        source: iconLogo
+        source: "qrc:/res/res/Credits.jpg"
         visible: showHeader
     }
 
@@ -40,10 +41,21 @@ Page {
         ScrollBar.vertical: ScrollBar { }
         contentHeight: source.height
         clip: true
+
         ColumnLayout {
             id: source
             width: parent.width
             spacing: 10
+
+            Image {
+                id: name
+                fillMode: Image.PreserveAspectCrop
+                source: iconLogo
+                Layout.alignment: Qt.AlignHCenter
+                Layout.preferredWidth: iconWidth
+                visible: iconLogo.length
+            }
+
             Label {
                 text: qsTr("Join the development fund and support QuasarApp to help with the development of our projects.")
 
