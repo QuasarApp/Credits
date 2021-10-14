@@ -14,20 +14,9 @@ ApplicationWindow {
             state: "about"
             developersList: [
                 {
-                    section: qsTr("## QuasarApp Core 1"),
+                    section: qsTr("## QuasarApp Core"),
                     sectionList: [
                         "* Oleg-Disigner",
-                        "* Yankovich Andrei"
-                    ]
-                },
-
-                {
-                    section: qsTr("## QuasarApp Core 2"),
-                    sectionList: [
-                        "* Oleg-Disigner",
-                        "* Yankovich Andrei",
-                        "* Yankovich Andrei",
-                        "* Yankovich Andrei",
                         "* Yankovich Andrei"
                     ]
                 }

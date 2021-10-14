@@ -16,9 +16,6 @@ import QtQuick.Layouts 1.15
 //    }
 //]
 Repeater {
-    model: patronsList
-
-    visible: showPatrons
 
     ColumnLayout {
         Layout.fillWidth: true
@@ -28,8 +25,6 @@ Repeater {
             Layout.fillWidth: true
 
             textFormat: TextEdit.MarkdownText
-            visible: true
-
         }
 
         Repeater {
