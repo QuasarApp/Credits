@@ -232,7 +232,7 @@ Page {
             PropertyChanges {
                 target: root
                 showQR: false
-                showHeader: true
+                showHeader: false
                 showPatreon: false
                 showBitcoin: false
                 patronsList: []

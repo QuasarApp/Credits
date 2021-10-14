@@ -28,7 +28,7 @@ Repeater {
             Layout.fillWidth: true
 
             textFormat: TextEdit.MarkdownText
-            visible: showPatrons
+            visible: true
 
         }
 
