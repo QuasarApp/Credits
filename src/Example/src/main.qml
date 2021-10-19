@@ -57,9 +57,9 @@ ApplicationWindow {
         Credits {
             state: "full"
             listCustomInfo: [
-                "## QuasarApp Core",
-                "* Oleg-Disigner",
-                "* Yankovich Andrei"
+                {text: "## QuasarApp Core"},
+                {text: "* Oleg-Disigner"},
+                {text: "* Yankovich Andrei"}
             ]
         }
     }

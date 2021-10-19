@@ -47,7 +47,11 @@ ColumnLayout {
                                  Qt.openUrlExternally(link)
                              }
             onLinkHovered: (link) => {
-                               lableSource.ToolTip.show(link)
+                               if (link.length) {
+                                    lableSource.ToolTip.show(link)
+                               } else {
+                                   lableSource.ToolTip.hide()
+                               }
                            }
         }
 
