@@ -10,24 +10,14 @@ Page {
     property bool showHeader: true
     property bool showPatreon: true
     property bool showBitcoin: true
-    property bool showPatrons: (showQR || showPatreon || showBitcoin) && patronsList.length
+    property bool showPatrons: (showQR || showPatreon || showBitcoin)
 
     // developersa and patronsList lists must be contain structure with a section amd sectionList fields.
     // The section it is section name
     // the sectionList it is list of section members.
     property string iconLogo: ""
     property int iconWidth: 250
-    property var developersList: []
-    property var versionList: []
-    property var patronsList: [
-        {
-            section: qsTr("## Silver Membership Patrons:"),
-            sectionList: [
-                "* Rustem Husnutdinov",
-                "* Semih Ufuk Güler"
-            ]
-        }
-    ]
+    property var listCustomInfo: []
 
     header: Image {
         fillMode: Image.PreserveAspectFit
@@ -116,52 +106,10 @@ Page {
 
             }
 
-            Label {
-                text: qsTr("# Our patrons list:")
-                Layout.fillWidth: true
-
-                textFormat: TextEdit.MarkdownText
-                visible: showPatrons
-
-
-            }
-
             ListViewer {
-                model: patronsList
+                model: listCustomInfo
 
-                visible: showPatrons
-            }
-
-            Label {
-                text: qsTr("# Developers list:")
-                Layout.fillWidth: true
-
-                textFormat: TextEdit.MarkdownText
-
-                visible: developersList.length
-
-            }
-
-            ListViewer {
-                model: developersList
-
-                visible: developersList.length
-            }
-
-            Label {
-                text: qsTr("# Version list:")
-                Layout.fillWidth: true
-
-                textFormat: TextEdit.MarkdownText
-
-                visible: versionList.length
-
-            }
-
-            ListViewer {
-                model: versionList
-
-                visible: versionList.length
+                visible: listCustomInfo.length
             }
 
         }
@@ -223,7 +171,6 @@ Page {
                 showPatreon: false
                 showBitcoin: false
                 showPatrons: true
-
             }
         },
 
@@ -235,8 +182,6 @@ Page {
                 showHeader: false
                 showPatreon: false
                 showBitcoin: false
-                patronsList: []
-
             }
         }
     ]
