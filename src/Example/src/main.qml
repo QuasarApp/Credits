@@ -19,7 +19,7 @@ ApplicationWindow {
                     color: ""
                 },
                 {
-                    text: "* [Oleg-Disigner](https://www.google.com/)",
+                    text: "* [google](https://www.google.com/)",
                     align: Label.AlignHCenter,
                     color: ""
 
