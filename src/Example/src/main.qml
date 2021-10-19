@@ -13,9 +13,22 @@ ApplicationWindow {
         Credits {
             state: "about"
             listCustomInfo: [
-                "## QuasarApp Developers:",
-                "* Oleg-Disigner",
-                "* Yankovich Andrei"
+                {
+                    text: "## QuasarApp Developers: ",
+                    align: Label.AlignHCenter,
+                    color: ""
+                },
+                {
+                    text: "* [Oleg-Disigner](https://www.google.com/)",
+                    align: Label.AlignHCenter,
+                    color: ""
+
+                },
+                {
+                    text: "* Yankovich Andrei",
+                    align: Label.AlignHCenter,
+                    color: "Red"
+                }
             ]
 
         }
