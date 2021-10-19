@@ -15,29 +15,22 @@ import QtQuick.Layouts 1.15
 //        ]
 //    }
 //]
-Repeater {
 
-    ColumnLayout {
-        Layout.fillWidth: true
+ColumnLayout {
+    property var model: []
+    Layout.fillWidth: true
+
+    Repeater {
+        model: model
 
         Label {
-            text: modelData.section
+            text: modelData
             Layout.fillWidth: true
 
             textFormat: TextEdit.MarkdownText
-        }
-
-        Repeater {
-            model: modelData.sectionList
-
-            Label {
-                text: modelData
-                Layout.fillWidth: true
-
-                textFormat: TextEdit.MarkdownText
-
-            }
 
         }
+
     }
 }
+
