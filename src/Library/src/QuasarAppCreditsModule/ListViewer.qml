@@ -40,6 +40,7 @@ ColumnLayout {
             Layout.fillWidth: true
             horizontalAlignment: (modelData.align)? modelData.align : horizontalAlignment
             color: (modelData.color && modelData.color.length)? modelData.color: color
+            wrapMode: Text.WordWrap
 
             textFormat: TextEdit.MarkdownText
             linkColor: Material.accent
