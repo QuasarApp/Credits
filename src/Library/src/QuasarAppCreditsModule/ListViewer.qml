@@ -17,11 +17,12 @@ import QtQuick.Layouts 1.15
 //]
 
 ColumnLayout {
+    id: root
     property var model: []
     Layout.fillWidth: true
 
     Repeater {
-        model: model
+        model: root.model
 
         Label {
             text: modelData

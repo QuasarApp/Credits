@@ -10,7 +10,7 @@ Page {
     property bool showHeader: true
     property bool showPatreon: true
     property bool showBitcoin: true
-    property bool showPatrons: (showQR || showPatreon || showBitcoin) && listCustomInfo.length
+    property bool showPatrons: (showQR || showPatreon || showBitcoin)
 
     // developersa and patronsList lists must be contain structure with a section amd sectionList fields.
     // The section it is section name
@@ -109,7 +109,7 @@ Page {
             ListViewer {
                 model: listCustomInfo
 
-                visible: showPatrons
+                visible: listCustomInfo.length
             }
 
         }
@@ -182,8 +182,6 @@ Page {
                 showHeader: false
                 showPatreon: false
                 showBitcoin: false
-                listCustomInfo: []
-
             }
         }
     ]
