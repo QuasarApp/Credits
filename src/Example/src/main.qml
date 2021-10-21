@@ -12,15 +12,25 @@ ApplicationWindow {
 
         Credits {
             state: "about"
-            developersList: [
+            listCustomInfo: [
                 {
-                    section: qsTr("## QuasarApp Core"),
-                    sectionList: [
-                        "* Oleg-Disigner",
-                        "* Yankovich Andrei"
-                    ]
+                    text: "## QuasarApp Developers: ",
+                    align: Label.AlignHCenter,
+                    color: ""
+                },
+                {
+                    text: "* [google](https://www.google.com/)",
+                    align: Label.AlignHCenter,
+                    color: ""
+
+                },
+                {
+                    text: "* Yankovich Andrei",
+                    align: Label.AlignHCenter,
+                    color: "Red"
                 }
             ]
+
         }
         Credits {
             state: "minimal"
@@ -46,14 +56,10 @@ ApplicationWindow {
 
         Credits {
             state: "full"
-            developersList: [
-                {
-                    section: qsTr("## QuasarApp Core"),
-                    sectionList: [
-                        "* Oleg-Disigner",
-                        "* Yankovich Andrei"
-                    ]
-                }
+            listCustomInfo: [
+                {text: "## QuasarApp Core"},
+                {text: "* Oleg-Disigner"},
+                {text: "* Yankovich Andrei"}
             ]
         }
     }
