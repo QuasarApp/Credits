@@ -21,11 +21,11 @@
     </message>
     <message>
         <source># Our patrons list:</source>
-        <translation># 我們的顧客名單：</translation>
+        <translation type="vanished"># 我們的顧客名單：</translation>
     </message>
     <message>
         <source>## Silver Membership Patrons:</source>
-        <translation>## 白銀會員贊助人：</translation>
+        <translation type="vanished">## 白銀會員贊助人：</translation>
     </message>
     <message>
         <source>* Rustem Husnutdinov</source>
@@ -37,11 +37,11 @@
     </message>
     <message>
         <source># Developers list:</source>
-        <translation># 开发者列表：</translation>
+        <translation type="vanished"># 开发者列表：</translation>
     </message>
     <message>
         <source># Version list:</source>
-        <translation># 版本列表:</translation>
+        <translation type="vanished"># 版本列表:</translation>
     </message>
 </context>
 </TS>

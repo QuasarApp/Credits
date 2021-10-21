@@ -21,11 +21,11 @@
     </message>
     <message>
         <source># Our patrons list:</source>
-        <translation># Список наших спонсорів:</translation>
+        <translation type="vanished"># Список наших спонсорів:</translation>
     </message>
     <message>
         <source>## Silver Membership Patrons:</source>
-        <translation>## Список срібних спонсорів:</translation>
+        <translation type="vanished">## Список срібних спонсорів:</translation>
     </message>
     <message>
         <source>* Rustem Husnutdinov</source>
@@ -33,11 +33,11 @@
     </message>
     <message>
         <source># Developers list:</source>
-        <translation># Список розробників:</translation>
+        <translation type="vanished"># Список розробників:</translation>
     </message>
     <message>
         <source># Version list:</source>
-        <translation># Список версій:</translation>
+        <translation type="vanished"># Список версій:</translation>
     </message>
 </context>
 </TS>

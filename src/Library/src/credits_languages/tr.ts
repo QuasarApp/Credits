@@ -21,11 +21,11 @@
     </message>
     <message>
         <source># Our patrons list:</source>
-        <translation># Sponsor listemiz:</translation>
+        <translation type="vanished"># Sponsor listemiz:</translation>
     </message>
     <message>
         <source>## Silver Membership Patrons:</source>
-        <translation>## Gümüş üyelik sponsoru:</translation>
+        <translation type="vanished">## Gümüş üyelik sponsoru:</translation>
     </message>
     <message>
         <source>* Rustem Husnutdinov</source>
@@ -33,11 +33,11 @@
     </message>
     <message>
         <source># Developers list:</source>
-        <translation># Geliştirici listesi:</translation>
+        <translation type="vanished"># Geliştirici listesi:</translation>
     </message>
     <message>
         <source># Version list:</source>
-        <translation># Sürüm listesi:</translation>
+        <translation type="vanished"># Sürüm listesi:</translation>
     </message>
 </context>
 </TS>

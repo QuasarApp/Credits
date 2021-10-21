@@ -21,11 +21,11 @@
     </message>
     <message>
         <source># Our patrons list:</source>
-        <translation># Our patrons list:</translation>
+        <translation type="vanished"># Our patrons list:</translation>
     </message>
     <message>
         <source>## Silver Membership Patrons:</source>
-        <translation>## Silver Membership Patrons:</translation>
+        <translation type="vanished">## Silver Membership Patrons:</translation>
     </message>
     <message>
         <source>* Rustem Husnutdinov</source>
@@ -33,11 +33,7 @@
     </message>
     <message>
         <source># Developers list:</source>
-        <translation># Developers list:</translation>
-    </message>
-    <message>
-        <source># Version list:</source>
-        <translation></translation>
+        <translation type="vanished"># Developers list:</translation>
     </message>
 </context>
 </TS>

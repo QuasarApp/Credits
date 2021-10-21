@@ -21,11 +21,11 @@
     </message>
     <message>
         <source># Our patrons list:</source>
-        <translation># Nuestra lista de usuarios:</translation>
+        <translation type="vanished"># Nuestra lista de usuarios:</translation>
     </message>
     <message>
         <source>## Silver Membership Patrons:</source>
-        <translation>## Patrocinadores de Membresía Plata:</translation>
+        <translation type="vanished">## Patrocinadores de Membresía Plata:</translation>
     </message>
     <message>
         <source>* Rustem Husnutdinov</source>
@@ -37,11 +37,11 @@
     </message>
     <message>
         <source># Developers list:</source>
-        <translation># Lista de desarrolladores:</translation>
+        <translation type="vanished"># Lista de desarrolladores:</translation>
     </message>
     <message>
         <source># Version list:</source>
-        <translation># Lista de versiones:</translation>
+        <translation type="vanished"># Lista de versiones:</translation>
     </message>
 </context>
 </TS>
