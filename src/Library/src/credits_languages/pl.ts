@@ -19,29 +19,5 @@
         <source>**bitcoin:bc1q4wnp58plhx4fwnfnzz3e4slulv2gzzts89w2f7**</source>
         <translation>**bitcoin:bc1q4wnp58plhx4fwnfnzz3e4slulv2gzzts89w2f7**</translation>
     </message>
-    <message>
-        <source># Our patrons list:</source>
-        <translation type="vanished"># Lista naszych patronów:</translation>
-    </message>
-    <message>
-        <source>## Silver Membership Patrons:</source>
-        <translation type="vanished">## Srebrni Patroni Członkostwa:</translation>
-    </message>
-    <message>
-        <source>* Rustem Husnutdinov</source>
-        <translation type="vanished">* Rustem Husnutdinov</translation>
-    </message>
-    <message>
-        <source>* Semih Ufuk Güler</source>
-        <translation type="vanished">* Semih Ufuk Güler</translation>
-    </message>
-    <message>
-        <source># Developers list:</source>
-        <translation type="vanished"># Lista deweloperzy:</translation>
-    </message>
-    <message>
-        <source># Version list:</source>
-        <translation type="vanished"># Lista wersji:</translation>
-    </message>
 </context>
 </TS>

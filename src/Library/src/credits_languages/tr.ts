@@ -19,25 +19,5 @@
         <source>**bitcoin:bc1q4wnp58plhx4fwnfnzz3e4slulv2gzzts89w2f7**</source>
         <translation>**bitcoin:bc1q4wnp58plhx4fwnfnzz3e4slulv2gzzts89w2f7**</translation>
     </message>
-    <message>
-        <source># Our patrons list:</source>
-        <translation type="vanished"># Sponsor listemiz:</translation>
-    </message>
-    <message>
-        <source>## Silver Membership Patrons:</source>
-        <translation type="vanished">## Gümüş üyelik sponsoru:</translation>
-    </message>
-    <message>
-        <source>* Rustem Husnutdinov</source>
-        <translation type="vanished">* Rustem Husnutdinov</translation>
-    </message>
-    <message>
-        <source># Developers list:</source>
-        <translation type="vanished"># Geliştirici listesi:</translation>
-    </message>
-    <message>
-        <source># Version list:</source>
-        <translation type="vanished"># Sürüm listesi:</translation>
-    </message>
 </context>
 </TS>

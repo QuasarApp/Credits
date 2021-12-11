@@ -19,25 +19,5 @@
         <source>**bitcoin:bc1q4wnp58plhx4fwnfnzz3e4slulv2gzzts89w2f7**</source>
         <translation>**ビットコイン:bc1q4wnp58plhx4fwnfnzz3e4slulv2gzzts89w2f7**</translation>
     </message>
-    <message>
-        <source># Our patrons list:</source>
-        <translation type="vanished"># 私たちの常連客リスト:</translation>
-    </message>
-    <message>
-        <source>## Silver Membership Patrons:</source>
-        <translation type="vanished">## シルバーメンバーシップ:</translation>
-    </message>
-    <message>
-        <source>* Rustem Husnutdinov</source>
-        <translation type="vanished">* Rustem Husnutdinov</translation>
-    </message>
-    <message>
-        <source># Developers list:</source>
-        <translation type="vanished"># 開発者リスト:</translation>
-    </message>
-    <message>
-        <source># Version list:</source>
-        <translation type="vanished"># バージョンリスト:</translation>
-    </message>
 </context>
 </TS>
