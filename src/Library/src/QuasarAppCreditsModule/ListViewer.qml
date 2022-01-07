@@ -39,7 +39,6 @@ ColumnLayout {
             text: modelData.text
             Layout.fillWidth: true
             horizontalAlignment: (modelData.align)? modelData.align : horizontalAlignment
-            color: (modelData.color && modelData.color.length)? modelData.color: color
             wrapMode: Text.WordWrap
 
             textFormat: TextEdit.MarkdownText
@@ -54,6 +53,13 @@ ColumnLayout {
                                    lableSource.ToolTip.hide()
                                }
                            }
+
+            property string colorPrivate: (modelData.color && modelData.color.length)? modelData.color: ""
+            onColorPrivateChanged: {
+                if (colorPrivate && colorPrivate.length) {
+                    lableSource.color = colorPrivate
+                }
+            }
         }
 
     }
