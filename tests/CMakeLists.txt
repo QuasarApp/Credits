@@ -22,8 +22,8 @@ find_package(QT NAMES Qt6 Qt5 COMPONENTS Test REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Test REQUIRED)
 
 file(GLOB SOURCE_CPP
-    "*.cpp" "*.qrc"
-    "units/*.cpp" "units/*.qrc"
+    "*.cpp" "*.h" "*.qrc"
+    "units/*.cpp" "units/*.h" "units/*.qrc"
 )
 set(PUBLIC_INCUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}")
 set(PUBLIC_INCUDE_DIR ${PUBLIC_INCUDE_DIR} "${CMAKE_CURRENT_SOURCE_DIR}/units")

@@ -12,9 +12,9 @@ add_definitions(-DCredits_LIBRARY)
 
 
 file(GLOB SOURCE_CPP
-    "*.cpp" "*.qrc"
-    "src/*.cpp" "src/*.qrc"
-    "src/Private/*.cpp" "src/Private/*.qrc"
+    "*.cpp" "*.h" "*.qrc"
+    "src/*.cpp" "src/*.h" "src/*.qrc"
+    "src/Private/*.cpp" "src/Private/*.h" "src/Private/*.qrc"
 )
 
 set(PUBLIC_INCUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}")
