@@ -65,5 +65,5 @@ endif()
 
 
 initAll()
-
+make_directory("${CMAKE_CURRENT_SOURCE_DIR}/Distro")
 addDoc(${PROJECT_NAME} ${CMAKE_CURRENT_SOURCE_DIR}/doxygen.conf)
