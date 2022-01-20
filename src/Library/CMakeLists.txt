@@ -8,7 +8,7 @@
 cmake_minimum_required(VERSION 3.14)
 
 
-add_definitions(-DCredits_LIBRARY)
+add_definitions(-DQUASARAPP_CREDITS_LIBRARY)
 
 
 file(GLOB SOURCE_CPP
