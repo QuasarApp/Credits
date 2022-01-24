@@ -13,7 +13,7 @@
 
 class QQmlApplicationEngine;
 
-inline void QUASARAPP_CREDITS_EXPORT initCreditsResources() { Q_INIT_RESOURCE(QuasarAppCredits); }
+inline void initCreditsResources() { Q_INIT_RESOURCE(QuasarAppCredits); }
 
 /**
  * This name space contains classes for view credits page of the QuasarApp group.
