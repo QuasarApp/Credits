@@ -13,8 +13,9 @@ int main(int argc, char *argv[]) {
 
     QGuiApplication::setApplicationName("CreditsExample");
     QGuiApplication::setOrganizationName("QuasarApp");
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     QGuiApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
-
+#endif
     QGuiApplication app(argc, argv);
 
 
