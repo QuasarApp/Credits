@@ -46,5 +46,9 @@ prepareQM( ${PROJECT_NAME} ${CMAKE_CURRENT_SOURCE_DIR} "${LANGS}")
 
 setVersion(0 1 0)
 
-set(QML_IMPORT_PATH ${QML_IMPORT_PATH} "${CMAKE_CURRENT_LIST_DIR}/src" CACHE STRING "Qt Creator extra qml import paths" FORCE)
+
+if (NOT QML_IMPORT_PATH MATCHES "${CMAKE_CURRENT_LIST_DIR}/src")
+    set(QML_IMPORT_PATH ${QML_IMPORT_PATH} "${CMAKE_CURRENT_LIST_DIR}/src" CACHE STRING "Qt Creator extra qml import paths" FORCE)
+endif()
+
 message(QML_IMPORT_PATH = ${QML_IMPORT_PATH})
